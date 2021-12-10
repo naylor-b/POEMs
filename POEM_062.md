@@ -1,4 +1,4 @@
-POEM ID: 061  
+POEM ID: 062  
 Title:  Stricter Option Naming  
 authors: [Bret Naylor]  
 Competing POEMs:     
@@ -25,5 +25,10 @@ have to be changed, potentially breaking existing models.  This change would be 
 initially by just issuing a deprecation warning stating that the option name is deprecated and
 will result in an exception in a future release.
 
-Some examples of options that will need to change are 'gradient method' in `pyOptSparseDriver` and
-all of the 'train:*' options used with `MetaModelUnStructuredComp`.
+The following table shows which option names will be changed:
+
+Option Name               | Class                           
+:------------------------ | :-------------------------------
+gradient method           | pyOptSparseDriver               
+train:*                   | MetaModelUnStructuredComp       
+train:*                   | MultiFiMetaModelUnStructuredComp
