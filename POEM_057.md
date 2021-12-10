@@ -127,7 +127,7 @@ comp = om.ExplicitFuncComp(f, compute_jacvec_product=jvp_func)
 
 ## ImplicitFuncComp
 
-Implicit components must have at least an `apply_nonlinear` method to compute the residual given 
+Implicit function components must have at least an `apply_nonlinear` method to compute the residual given 
 values for input variables and implicit output variables (a.k.a state variables).  The mapping 
 between a state and its residual output must be specified in the metadata when the output (state) 
 is added by setting 'resid' to the name of the residual.
